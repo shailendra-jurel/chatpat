@@ -1,13 +1,21 @@
+import React from 'react'
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import './App.css'
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Chat from './pages/Chat';
+import SetProfileImage from './pages/SetProfileImage';
 
 function App() {
-
   return (
-   <> 
-   <h1>Hello this is simple client app based application for chatting</h1>
-   <h2> how are you heu hero </h2>
-   </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/setProfile" element={<SetProfileImage/>} />
+        <Route path="/" element={<Chat/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
