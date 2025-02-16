@@ -1,8 +1,8 @@
 const Reset = '\x1b[0m';
 const FgYellow = '\x1b[33m';
 
-// const APP_ENV = 'prod'
-const APP_ENV = 'local'
+const APP_ENV = 'prod'
+// const APP_ENV = 'local'
 let APP_HOST = ''
 
 switch (APP_ENV) {
@@ -13,6 +13,8 @@ switch (APP_ENV) {
     case 'prod':
         console.log('connecting to prod')
         // APP_HOST = 'https://chatsapp-iu36.onrender.com'
+        APP_HOST = 'https://chatpat-yunr.onrender.com'
+    
         break;
     default:
         console.log('connecting to default api (local)')
