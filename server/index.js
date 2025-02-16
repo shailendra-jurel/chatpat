@@ -42,7 +42,7 @@ connectDB().then(() => {
   const io = new Server(server, {
     cors: {
       origin: process.env.NODE_ENV === 'production' 
-        ? 'https://your-frontend-domain.com' 
+        ? 'https://chatpat-rho.vercel.app/' 
         : 'http://localhost:5173',
       credentials: true
     }
